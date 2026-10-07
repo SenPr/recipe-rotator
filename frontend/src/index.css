@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --color-text: var(--text);
+  --color-text-50: var(--text-50);
+  --color-text-100: var(--text-100);
+  --color-text-200: var(--text-200);
+  --color-text-300: var(--text-300);
+  --color-text-400: var(--text-400);
+  --color-text-500: var(--text-500);
+  --color-text-600: var(--text-600);
+  --color-text-700: var(--text-700);
+  --color-text-800: var(--text-800);
+  --color-text-900: var(--text-900);
+  --color-text-950: var(--text-950);
+
+  --color-background: var(--background);
+  --color-background-50: var(--background-50);
+  --color-background-100: var(--background-100);
+  --color-background-200: var(--background-200);
+  --color-background-300: var(--background-300);
+  --color-background-400: var(--background-400);
+  --color-background-500: var(--background-500);
+  --color-background-600: var(--background-600);
+  --color-background-700: var(--background-700);
+  --color-background-800: var(--background-800);
+  --color-background-900: var(--background-900);
+  --color-background-950: var(--background-950);
+
+  --color-primary: var(--primary);
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-primary-950: var(--primary-950);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-50: var(--secondary-50);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-200: var(--secondary-200);
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-400: var(--secondary-400);
+  --color-secondary-500: var(--secondary-500);
+  --color-secondary-600: var(--secondary-600);
+  --color-secondary-700: var(--secondary-700);
+  --color-secondary-800: var(--secondary-800);
+  --color-secondary-900: var(--secondary-900);
+  --color-secondary-950: var(--secondary-950);
+
+  --color-accent: var(--accent);
+  --color-accent-50: var(--accent-50);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+  --color-accent-800: var(--accent-800);
+  --color-accent-900: var(--accent-900);
+  --color-accent-950: var(--accent-950);
+
+}
+
+@layer base {
+  :root {
+    --text: #171003;
+    --background: #fff6e4;
+    --primary: #ffa600;
+    --secondary: #7ff090;
+    --accent: #5fecb6;
+    /* Primary shades */
+    --primary-50: #fff5e6;
+    --primary-100: #ffe7bf;
+    --primary-200: #ffd493;
+    --primary-300: #ffc166;
+    --primary-400: #ffb03a;
+    --primary-500: #ffa600;
+    --primary-600: #e69500;
+    --primary-700: #c37b00;
+    --primary-800: #a26200;
+    --primary-900: #7b4400;
+    /* Secondary shades */
+    --secondary-50: #f7fff9;
+    --secondary-100: #eaffef;
+    --secondary-200: #cffecc;
+    --secondary-300: #a9f5a6;
+    --secondary-400: #86ee82;
+    --secondary-500: #7ff090;
+    --secondary-600: #69d77a;
+    --secondary-700: #55b65f;
+    --secondary-800: #418a46;
+    --secondary-900: #2b5f2f;
+    /* Accent shades */
+    --accent-50: #f2fff9;
+    --accent-100: #e6fff3;
+    --accent-200: #c6ffe9;
+    --accent-300: #9fffdc;
+    --accent-400: #6fffc6;
+    --accent-500: #5fecb6;
+    --accent-600: #4cc79e;
+    --accent-700: #3b987e;
+    --accent-800: #2c7060;
+    --accent-900: #1b4a40;
+    /* Background shades */
+    --background-50: #fffdf9;
+    --background-100: #fff9f0;
+    --background-200: #fff0dd;
+    --background-300: #ffe6c9;
+    --background-400: #ffddb6;
+    --background-500: #fff6e4;
+    --background-600: #f1e0c2;
+    --background-700: #d9c49d;
+    --background-800: #b9a079;
+    --background-900: #8f7750;
+    /* Text shades */
+    --text-50: #f7f6f5;
+    --text-100: #efebe9;
+    --text-200: #dcd6d1;
+    --text-300: #bfb6ae;
+    --text-400: #9f9086;
+    --text-500: #171003;
+    --text-600: #110b07;
+    --text-700: #0b0603;
+    --text-800: #070402;
+    --text-900: #030201;
+  }
+  .dark {
+    --text: #fcf5e8;
+    --background: #120d02;
+    --primary: #ffa600;
+    --secondary: #0f8020;
+    --accent: #13a06a;
+    /* Primary shades (dark theme) */
+    --primary-50: #fff2dd;
+    --primary-100: #ffdfb3;
+    --primary-200: #ffc87f;
+    --primary-300: #ffb44f;
+    --primary-400: #ffa32a;
+    --primary-500: #ffa600;
+    --primary-600: #d68700;
+    --primary-700: #b46e00;
+    --primary-800: #8f5500;
+    --primary-900: #673700;
+    /* Secondary shades (dark theme) */
+    --secondary-50: #eaf8ea;
+    --secondary-100: #d4f1d4;
+    --secondary-200: #a9e3aa;
+    --secondary-300: #7ed77f;
+    --secondary-400: #53c656;
+    --secondary-500: #0f8020;
+    --secondary-600: #0c6a1a;
+    --secondary-700: #0a5414;
+    --secondary-800: #073e0f;
+    --secondary-900: #04280a;
+    /* Accent shades (dark theme) */
+    --accent-50: #eaf9f0;
+    --accent-100: #d3f3e1;
+    --accent-200: #a6e7c3;
+    --accent-300: #7adb9f;
+    --accent-400: #4fca7f;
+    --accent-500: #13a06a;
+    --accent-600: #0f8456;
+    --accent-700: #0c6a44;
+    --accent-800: #094f33;
+    --accent-900: #063522;
+    /* Background & text shades (dark theme) */
+    --background-50: #1c150a;
+    --background-100: #17120a;
+    --background-200: #120d07;
+    --background-300: #0d0804;
+    --background-400: #0b0603;
+    --background-500: #120d02;
+    --background-600: #0f0a02;
+    --background-700: #0b0701;
+    --background-800: #070401;
+    --background-900: #030201;
+    --text-50: #ffffff;
+    --text-100: #f6efe0;
+    --text-200: #e0d6c2;
+    --text-300: #bfb39a;
+    --text-400: #9f8776;
+    --text-500: #fcf5e8;
+    --text-600: #d9cdbf;
+    --text-700: #b59d8f;
+    --text-800: #8f7968;
+    --text-900: #6a5d4c;
+  }
+}

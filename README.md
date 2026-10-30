@@ -16,6 +16,20 @@ random-recipe endpoint. The frontend contains the application layout,
 navigation, add-recipe dialog, recipe roller, and recipe-list views; some of
 the UI is still a scaffold and is not yet connected to the API.
 
+## Frontend previews
+
+### Recipe roller
+
+![Recipe roller preview](./docs/frontend-preview.png)
+
+### Recipe list
+
+![Recipe list preview](./docs/frontend-list-preview.png)
+
+### Add recipe dialog
+
+![Add recipe dialog preview](./docs/frontend-add-preview.png)
+
 ## Requirements
 
 - Node.js 20 or newer
